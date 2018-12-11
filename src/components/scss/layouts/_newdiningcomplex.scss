@@ -1,0 +1,89 @@
+section#interactive {
+		
+		h1.section-title {
+			text-transform: uppercase;
+			letter-spacing: $letter-spacing-header;
+			text-align: center;
+			width:100%;
+			z-index:0;
+		}
+
+		.bouncing-scroll {
+			margin-top:-30px
+		}
+
+}
+section#newdiningcomplex {
+	justify-content: flex-end;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	@media (max-width:699px) {
+		background-image: url(/img/renderings/vistagrande-Watercolor.jpg);
+	}
+	@media (min-width:700px) {
+		background-image: url(/img/renderings/vistagrande-Watercolor.jpg);
+	}
+
+	@media (min-width: 1300px) {
+		background-image: url(/img/renderings/vistagrande-Watercolor.jpg);
+	}
+	header {
+		color: $white;
+		h1 {
+			&:before, &:after {
+				display:none;
+			}
+		}
+
+	}
+	.bouncing-scroll {
+	
+		a {
+			color: $white;
+		}
+	}
+}
+section#intro {}
+section.bg-image {
+
+}
+section#livestream {
+	background: $dingley url(/img/livestream.png) repeat 0 0;
+	background-size: cover;
+	background-color:$dingley;
+  margin: 0;
+  text-align: center;
+  position:relative;
+  &::after {
+  	content: ""; // ::before and ::after both require content
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, $dingley, $mustard);
+    opacity: .5;
+    z-index:1;
+  }
+  h1 {
+  	color:$white;
+  	@include media($large-screen){
+	  	font-size:96px;
+	  }
+  }
+  h1, div {
+  z-index:2;
+  }
+
+  .button {
+  	margin:1em;
+  }
+}
+
+#news {
+	background-color: $dingley;
+	header {
+		color: $white;
+	}
+}

@@ -30,50 +30,26 @@ const Navbar = class extends React.Component {
  
  render() {
    return (
-  
-  <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
-    <div className="container">
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item" title="Logo">
-          <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-        </Link>
-        {/* Hamburger menu */}
-        <div className="navbar-burger burger" data-target="navMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div id="navMenu" className="navbar-menu">
-      <div className="navbar-start has-text-centered">
-        <Link className="navbar-item" to="/about">
-          About
-        </Link>
-        <Link className="navbar-item" to="/products">
-          Products
-        </Link>
-        <Link className="navbar-item" to="/contact">
-          Contact
-        </Link>
-        <Link className="navbar-item" to="/contact/examples">
-          Form Examples
-        </Link>
-      </div>
-      <div className="navbar-end has-text-centered">
-        <a
-          className="navbar-item"
-          href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="icon">
-            <img src={github} alt="Github" />
-          </span>
-        </a>
-      </div>
-      </div>
+  <header> 
+  <div className="header-primary"> 
+       
+       
+    <div className="right-nav">
+      <ul>
+        <li><a href="#intro">About</a></li>
+        <li><a href="#livestream">Livestream</a></li>
+        <li><a href="#transition">Transition Plan</a></li>
+        <li><a href="#news">News</a></li>
+      </ul>
     </div>
-  </nav>
+    <div id="cplogo">
+      <Link to="/" className="navbar-item" title="Logo">
+        <img src={logo} alt="Cal Poly Corporation" style={{ width: '88px' }} />
+        <span>Vista Grande<br/>Dining Complex</span>
+      </Link>
+    </div>
+  </div>
+  </header>
   )}
 }
 
