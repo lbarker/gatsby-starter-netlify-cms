@@ -36,10 +36,16 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
+          <link href="https://fonts.googleapis.com/css?family=Lato:300,500,700|Oswald" rel='stylesheet' type='text/css'/>
+	  	    <script async src="https://use.fontawesome.com/2993a31b0c.js"  defer />
+          <script async src="js/lunar.js" />
+          <script async src="js/imagesloaded.pkgd.min.js"/>
+          <script async src="js/main.js" />
         </Helmet>
         <Navbar />
         <div>{children}</div>
         <Footer />
+        
       </div>
     )}
   />

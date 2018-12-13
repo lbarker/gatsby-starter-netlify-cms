@@ -3,8 +3,8 @@
 @import "scss/bourbon/bourbon";
 @import "scss/neat/neat";
 
-$video-path: "/static";
-$image-path: "/static";
+$video-path: "/";
+$image-path: "/";
 
 /*------------------------------------*\
     $ABSTRACTS
@@ -21,13 +21,6 @@ $image-path: "/static";
 @import "scss/base/forms";
 @import "scss/base/lists";
 @import "scss/base/media";
-@import "scss/base/tables";
-@import 'scss/base/lightbox';
-@import 'scss/base/text-fader';
-@import 'scss/base/styleguide';
-@import 'scss/base/syntax-highlighting';
-@import 'scss/base/google-business';
-@import 'scss/base/video';
 @import 'scss/base/media-print';
 
 
@@ -37,13 +30,10 @@ $image-path: "/static";
 @import 'scss/components/preloader';
 @import "scss/components/buttons";
 @import "scss/components/hamburgers/hamburgers";
-@import 'scss/components/breadcrumb';
 @import 'scss/components/social_icons';
-@import 'scss/components/disclaimer';
 @import 'scss/components/blocks';
 @import 'scss/components/hero-intro';
 @import "scss/components/card";
-@import "scss/components/disclaimer-section";
 @import "scss/components/content-devider";
 
 /*------------------------------------*\
@@ -55,9 +45,6 @@ $image-path: "/static";
 @import 'scss/layouts/footer';
 @import 'scss/layouts/navigation';
 @import 'scss/layouts/off-canvas';
-@import "scss/layouts/sitemap";
-@import "scss/layouts/homepage";
-@import "scss/layouts/backpages";
 @import "scss/layouts/default-2017";
 @import "scss/layouts/newdiningcomplex";
 @import "scss/layouts/interactive-points";

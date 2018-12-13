@@ -32,18 +32,18 @@ const Navbar = class extends React.Component {
   <header> 
   <div className="header-primary"> 
        
-       
+   //https://gist.github.com/ryanditjia/f66dd1d0e7dfd678a18dc4a15de8531d    
     <div className="right-nav">
       <ul>
-        <li><a href="#intro">About</a></li>
-        <li><a href="#livestream">Livestream</a></li>
-        <li><a href="#transition">Transition Plan</a></li>
-        <li><a href="#news">News</a></li>
+        <li><a href="/#intro">About</a></li>
+        <li><a href="/#livestream">Livestream</a></li>
+        <li><a href="/#transition">Transition Plan</a></li>
+        <li><a href="/#news">News</a></li>
       </ul>
     </div>
     <div id="cplogo">
       <Link to="/" className="navbar-item" title="Logo">
-        <img src={logo} alt="Cal Poly Corporation" style={{ width: '88px' }} />
+        <img src={logo} alt="Cal Poly Corporation" />
         <span>Vista Grande<br/>Dining Complex</span>
       </Link>
     </div>

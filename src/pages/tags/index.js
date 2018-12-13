@@ -8,13 +8,17 @@ const TagsPage = ({
   data: { allMarkdownRemark: { group }, site: { siteMetadata: { title } } },
 }) => (
   <Layout>
-    <section className="section">
+    <section className="wrapper default-narrow" 
+      style={{
+        margin: '100px'
+      }}
+    >
       <Helmet title={`Tags | ${title}`} />
-      <div className="container content">
-        <div className="columns">
-          <div
-            className="column is-10 is-offset-1"
-            style={{ marginBottom: '6rem' }}
+        <div 
+          className="container"
+          style={{
+              padding: '.5em',
+            }}
           >
             <h1 className="title is-size-2 is-bold-light">Tags</h1>
             <ul className="taglist">
@@ -27,8 +31,6 @@ const TagsPage = ({
               ))}
             </ul>
           </div>
-        </div>
-      </div>
     </section>
   </Layout>
 )
